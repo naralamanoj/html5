@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found | Alex Developer</title>
+    <meta name="description" content="The page you are looking for could not be found. Return to the Alex Developer portfolio home page.">
+    <meta name="keywords" content="404, page not found, error, Alex Developer">
+    <link rel="canonical" href="https://alexdeveloper.com/pages/404.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="404 Page Not Found | Alex Developer">
+    <meta property="og:description" content="The page you are looking for could not be found. Return to the Alex Developer portfolio home page.">
+    <meta property="og:image" content="https://alexdeveloper.com/assets/og-image.jpg">
+    <meta property="og:url" content="https://alexdeveloper.com/pages/404.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="404 Page Not Found | Alex Developer">
+    <meta name="twitter:description" content="The page you are looking for could not be found. Return to the Alex Developer portfolio home page.">
+    <meta name="twitter:image" content="https://alexdeveloper.com/assets/twitter-image.jpg">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="../css/variables.css" as="style">
+    <link rel="preload" href="../css/base.css" as="style">
+    <link rel="preload" href="../css/layout.css" as="style">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="primary-nav" aria-label="Primary navigation">
+            <div class="nav-container">
+                <a href="../index.html" class="logo" aria-label="Alex Developer - Home">
+                    <span>AD</span>
+                </a>
+
+                <button class="hamburger-menu" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="theme-controls">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                    <button class="font-size-toggle" aria-label="Increase font size">A+</button>
+                    <button class="contrast-toggle" aria-label="Toggle high contrast">◐</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <section aria-labelledby="error-heading">
+            <div class="container">
+                <h1 id="error-heading">404 — Page Not Found</h1>
+                <p>Sorry, the page you were looking for doesn't exist or may have been moved.</p>
+                <p>Here are some helpful links to get you back on track:</p>
+                <nav aria-label="Error page navigation">
+                    <ul>
+                        <li><a href="../index.html" class="btn btn-primary">Go to Home Page</a></li>
+                        <li><a href="projects.html">View Projects</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <nav aria-label="Footer navigation">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <address>
+                        <p>Email: <a href="mailto:alex@alexdeveloper.com">alex@alexdeveloper.com</a></p>
+                        <p>Location: San Francisco, CA</p>
+                    </address>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Me</h3>
+                    <div class="footer-social">
+                        <a href="https://github.com/alexdeveloper" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                        <a href="https://linkedin.com/in/alexdeveloper" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Alex Developer. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="accessibility.html">Accessibility Statement</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Scripts -->
+    <script src="../js/theme.js" defer></script>
+    <script src="../js/navigation.js" defer></script>
+    <script src="../js/toast.js" defer></script>
+</body>
+</html>

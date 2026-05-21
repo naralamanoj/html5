@@ -1,0 +1,27 @@
+{
+  "name": "narala-manoj-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Narala Manoj - B.Tech student in AI & Data Science",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Static site - no build needed'",
+    "serve": "python -m http.server 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "AI",
+    "data-science",
+    "student",
+    "web-development",
+    "python",
+    "java"
+  ],
+  "author": "Narala Manoj <manojnarala245@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manojnarala/portfolio"
+  }
+}

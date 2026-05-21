@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Narala Manoj - AI & Data Science Student</title>
+    <meta name="description" content="Explore Narala Manoj's portfolio of web development projects including restaurant website, library management system, and student counselling platform.">
+    <meta name="keywords" content="Narala Manoj projects, web development portfolio, restaurant website, library system, student counselling, Python projects">
+    <link rel="canonical" href="https://manojnarala.dev/pages/projects.html">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    
+    <!-- JSON-LD CreativeWork Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Narala Manoj's Projects",
+        "description": "Portfolio of web development projects by Narala Manoj",
+        "itemListElement": [
+            {
+                "@type": "CreativeWork",
+                "position": 1,
+                "name": "Advanced Restaurant Website",
+                "description": "Modern restaurant website with advanced frontend development",
+                "author": {
+                    "@type": "Person",
+                    "name": "Narala Manoj"
+                },
+                "programmingLanguage": ["HTML5", "CSS3", "JavaScript"]
+            },
+            {
+                "@type": "CreativeWork",
+                "position": 2,
+                "name": "Academic Library Management System",
+                "description": "User-friendly library system based on academic year requirements",
+                "author": {
+                    "@type": "Person",
+                    "name": "Narala Manoj"
+                },
+                "programmingLanguage": ["Python", "Flask", "HTML", "CSS"]
+            },
+            {
+                "@type": "CreativeWork",
+                "position": 3,
+                "name": "Student Counselling Platform",
+                "description": "Full-stack web application for student counselling services",
+                "author": {
+                    "@type": "Person",
+                    "name": "Narala Manoj"
+                },
+                "programmingLanguage": ["Python", "Django", "PostgreSQL"]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="primary-nav" aria-label="Primary navigation">
+            <div class="nav-container">
+                <a href="../" class="logo" aria-label="Narala Manoj - Home">
+                    <span>NM</span>
+                </a>
+                
+                <button class="hamburger-menu" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="theme-controls">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                    <button class="font-size-toggle" aria-label="Increase font size">A+</button>
+                    <button class="contrast-toggle" aria-label="Toggle high contrast">◐</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Projects Hero -->
+        <section class="hero" aria-labelledby="projects-heading">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 id="projects-heading">My Projects</h1>
+                    <p class="hero-subtitle">Web Development Portfolio</p>
+                    <p class="hero-description">
+                        Explore my collection of web development projects showcasing frontend development, 
+                        full-stack applications, and user-friendly solutions for real-world problems.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Project Filters -->
+        <section class="projects-filters" aria-labelledby="filter-heading">
+            <div class="container">
+                <h2 id="filter-heading" class="sr-only">Filter Projects</h2>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">
+                        All Projects <span class="count">(3)</span>
+                    </button>
+                    <button class="filter-btn" data-filter="frontend" aria-pressed="false">
+                        Frontend <span class="count">(1)</span>
+                    </button>
+                    <button class="filter-btn" data-filter="fullstack" aria-pressed="false">
+                        Full-Stack <span class="count">(2)</span>
+                    </button>
+                    <button class="filter-btn" data-filter="python" aria-pressed="false">
+                        Python <span class="count">(2)</span>
+                    </button>
+                </div>
+                
+                <div class="search-container">
+                    <label for="project-search" class="sr-only">Search Projects</label>
+                    <input 
+                        type="search" 
+                        id="project-search" 
+                        placeholder="Search projects..." 
+                        aria-describedby="search-results"
+                    >
+                    <div id="search-results" class="search-results" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Grid -->
+        <section class="projects-section" aria-labelledby="projects-list-heading">
+            <div class="container">
+                <h2 id="projects-list-heading" class="sr-only">Projects List</h2>
+                <div class="projects-grid" id="projects-grid">
+                    
+                    <!-- Restaurant Website Project -->
+                    <article class="project-card" data-category="frontend" data-tags="html css javascript restaurant frontend">
+                        <figure class="project-image">
+                            <img src="../assets/project-restaurant.jpg" alt="Advanced restaurant website showing modern UI with menu management and ordering system" width="300" height="200" loading="lazy">
+                            <figcaption class="sr-only">Restaurant Website Screenshot</figcaption>
+                        </figure>
+                        <div class="project-content">
+                            <h3>Advanced Restaurant Website</h3>
+                            <p>Modern restaurant website featuring advanced frontend development with responsive design, interactive menu system, and user-friendly interface. Built with pure HTML5, CSS3, and JavaScript.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/manojnarala/restaurant-website" target="_blank" rel="noopener noreferrer" aria-label="View Restaurant Website source code on GitHub">
+                                    <span class="link-icon">🔗</span> GitHub
+                                </a>
+                                <button class="view-details-btn" aria-label="View Restaurant Website details">
+                                    <span class="link-icon">👁️</span> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Library Management System -->
+                    <article class="project-card" data-category="fullstack python" data-tags="python flask library management academic fullstack">
+                        <figure class="project-image">
+                            <img src="../assets/project-library.jpg" alt="Academic library management system showing student-friendly interface with book search and management features" width="300" height="200" loading="lazy">
+                            <figcaption class="sr-only">Library Management System Screenshot</figcaption>
+                        </figure>
+                        <div class="project-content">
+                            <h3>Academic Library Management System</h3>
+                            <p>User-friendly library system designed specifically for academic year requirements. Features intuitive navigation, book search functionality, and student-centric design for easy access to library resources.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/manojnarala/library-management" target="_blank" rel="noopener noreferrer" aria-label="View Library Management System source code on GitHub">
+                                    <span class="link-icon">🔗</span> GitHub
+                                </a>
+                                <button class="view-details-btn" aria-label="View Library Management System details">
+                                    <span class="link-icon">👁️</span> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Student Counselling Platform -->
+                    <article class="project-card" data-category="fullstack python" data-tags="python django counselling student fullstack postgresql">
+                        <figure class="project-image">
+                            <img src="../assets/project-counselling.jpg" alt="Student counselling platform showing appointment booking and resource management interface" width="300" height="200" loading="lazy">
+                            <figcaption class="sr-only">Student Counselling Platform Screenshot</figcaption>
+                        </figure>
+                        <div class="project-content">
+                            <h3>Student Counselling Platform</h3>
+                            <p>Full-stack web application designed to save students time by providing easy access to counselling services. Features both frontend and backend development with appointment booking and resource management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/manojnarala/student-counselling" target="_blank" rel="noopener noreferrer" aria-label="View Student Counselling Platform source code on GitHub">
+                                    <span class="link-icon">🔗</span> GitHub
+                                </a>
+                                <button class="view-details-btn" aria-label="View Student Counselling Platform details">
+                                    <span class="link-icon">👁️</span> View Details
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- No Results Message -->
+                <div id="no-results" class="no-results" style="display: none;" aria-live="polite">
+                    <h3>No projects found</h3>
+                    <p>Try adjusting your search terms or filters to find what you're looking for.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Project Statistics -->
+        <section class="project-stats" aria-labelledby="stats-heading">
+            <div class="container">
+                <h2 id="stats-heading">Project Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="3" data-duration="1500">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="6" data-duration="2000">0</div>
+                        <div class="stat-label">Technologies Used</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="2" data-duration="1000">0</div>
+                        <div class="stat-label">Full-Stack Applications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="100" data-duration="2500">0</div>
+                        <div class="stat-label">Hours of Development</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Technologies Used -->
+        <section class="technologies-section" aria-labelledby="tech-heading">
+            <div class="container">
+                <h2 id="tech-heading">Technologies & Tools</h2>
+                <p>Technologies I've used across my projects:</p>
+                <div class="tech-cloud">
+                    <span class="tech-item" data-weight="3">Python</span>
+                    <span class="tech-item" data-weight="2">Flask</span>
+                    <span class="tech-item" data-weight="2">Django</span>
+                    <span class="tech-item" data-weight="3">HTML5</span>
+                    <span class="tech-item" data-weight="3">CSS3</span>
+                    <span class="tech-item" data-weight="3">JavaScript</span>
+                    <span class="tech-item" data-weight="1">PostgreSQL</span>
+                    <span class="tech-item" data-weight="1">SQLite</span>
+                    <span class="tech-item" data-weight="1">Bootstrap</span>
+                    <span class="tech-item" data-weight="2">Responsive Design</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <nav aria-label="Footer navigation">
+                        <ul>
+                            <li><a href="../">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <address>
+                        <p>Email: <a href="mailto:manojnarala245@gmail.com">manojnarala245@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+918106905004">+91 8106905004</a></p>
+                        <p>Location: Vidyanagar, Nellore, Andhra Pradesh, India</p>
+                    </address>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Me</h3>
+                    <div class="footer-social">
+                        <a href="https://github.com/manojnarala" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                        <a href="https://linkedin.com/in/narala-manoj-215849302" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Narala Manoj. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="accessibility.html">Accessibility Statement</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Toast Container -->
+    <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+    
+    <!-- Scripts -->
+    <script src="../js/theme.js" defer></script>
+    <script src="../js/navigation.js" defer></script>
+    <script src="../js/toast.js" defer></script>
+    <script src="../js/modal.js" defer></script>
+    <script src="../js/animations.js" defer></script>
+    <script src="../js/projects.js" defer></script>
+</body>
+</html>
