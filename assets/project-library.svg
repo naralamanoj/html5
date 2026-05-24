@@ -1,14 +1,74 @@
-<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#10b981"/>
-      <stop offset="100%" style="stop-color:#059669"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.05"/>
     </linearGradient>
   </defs>
-  <rect width="300" height="200" fill="url(#g)" rx="8"/>
-  <rect x="20" y="20" width="260" height="160" fill="rgba(255,255,255,0.15)" rx="6"/>
-  <text x="150" y="75" font-family="Arial,sans-serif" font-size="40" fill="white" text-anchor="middle">📚</text>
-  <text x="150" y="115" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="white" text-anchor="middle">Library Management</text>
-  <text x="150" y="140" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.85)" text-anchor="middle">Python · Flask · HTML/CSS</text>
-  <text x="150" y="162" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.7)" text-anchor="middle">Full-Stack Development</text>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="530" cy="50" r="90" fill="rgba(255,255,255,0.07)"/>
+  <circle cx="70" cy="360" r="70" fill="rgba(255,255,255,0.07)"/>
+
+  <!-- Browser window -->
+  <rect x="40" y="40" width="520" height="320" rx="12" fill="url(#card)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <rect x="40" y="40" width="520" height="36" rx="12" fill="rgba(0,0,0,0.25)"/>
+  <rect x="40" y="64" width="520" height="12" fill="rgba(0,0,0,0.25)"/>
+  <circle cx="66" cy="58" r="6" fill="#ff5f57"/>
+  <circle cx="86" cy="58" r="6" fill="#febc2e"/>
+  <circle cx="106" cy="58" r="6" fill="#28c840"/>
+  <rect x="130" y="50" width="300" height="16" rx="8" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- Sidebar -->
+  <rect x="40" y="76" width="130" height="284" fill="rgba(0,0,0,0.25)"/>
+  <text x="105" y="105" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">📚 Library</text>
+  <rect x="55" y="115" width="100" height="18" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="105" y="128" font-family="Arial,sans-serif" font-size="10" fill="white" text-anchor="middle">📖 Browse Books</text>
+  <rect x="55" y="140" width="100" height="18" rx="4" fill="rgba(255,255,255,0.1)"/>
+  <text x="105" y="153" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.7)" text-anchor="middle">🔍 Search</text>
+  <rect x="55" y="165" width="100" height="18" rx="4" fill="rgba(255,255,255,0.1)"/>
+  <text x="105" y="178" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.7)" text-anchor="middle">📅 My Borrows</text>
+  <rect x="55" y="190" width="100" height="18" rx="4" fill="rgba(255,255,255,0.1)"/>
+  <text x="105" y="203" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.7)" text-anchor="middle">⭐ Favourites</text>
+
+  <!-- Search bar -->
+  <rect x="180" y="82" width="360" height="30" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <text x="200" y="101" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">🔍  Search books, authors, subjects...</text>
+
+  <!-- Book cards -->
+  <rect x="180" y="124" width="100" height="130" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <rect x="180" y="124" width="100" height="80" rx="6" fill="rgba(0,0,0,0.2)"/>
+  <text x="230" y="172" font-family="Arial,sans-serif" font-size="28" text-anchor="middle">📘</text>
+  <text x="230" y="222" font-family="Arial,sans-serif" font-size="9" fill="white" text-anchor="middle">Data Science</text>
+  <text x="230" y="236" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">Available</text>
+  <rect x="190" y="242" width="80" height="6" rx="3" fill="rgba(16,185,129,0.8)"/>
+
+  <rect x="295" y="124" width="100" height="130" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <rect x="295" y="124" width="100" height="80" rx="6" fill="rgba(0,0,0,0.2)"/>
+  <text x="345" y="172" font-family="Arial,sans-serif" font-size="28" text-anchor="middle">📗</text>
+  <text x="345" y="222" font-family="Arial,sans-serif" font-size="9" fill="white" text-anchor="middle">Python Prog.</text>
+  <text x="345" y="236" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">Available</text>
+  <rect x="305" y="242" width="80" height="6" rx="3" fill="rgba(16,185,129,0.8)"/>
+
+  <rect x="410" y="124" width="100" height="130" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <rect x="410" y="124" width="100" height="80" rx="6" fill="rgba(0,0,0,0.2)"/>
+  <text x="460" y="172" font-family="Arial,sans-serif" font-size="28" text-anchor="middle">📙</text>
+  <text x="460" y="222" font-family="Arial,sans-serif" font-size="9" fill="white" text-anchor="middle">AI Basics</text>
+  <text x="460" y="236" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">Borrowed</text>
+  <rect x="420" y="242" width="80" height="6" rx="3" fill="rgba(239,68,68,0.8)"/>
+
+  <!-- Stats row -->
+  <rect x="180" y="268" width="340" height="50" rx="6" fill="rgba(0,0,0,0.2)"/>
+  <text x="260" y="290" font-family="Arial,sans-serif" font-size="11" fill="white" text-anchor="middle">📚 1,240 Books</text>
+  <text x="360" y="290" font-family="Arial,sans-serif" font-size="11" fill="white" text-anchor="middle">👤 320 Students</text>
+  <text x="460" y="290" font-family="Arial,sans-serif" font-size="11" fill="white" text-anchor="middle">✅ 98% Available</text>
+
+  <!-- Label -->
+  <rect x="0" y="360" width="600" height="40" fill="rgba(0,0,0,0.4)"/>
+  <text x="300" y="386" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Library Management System · Python · Flask · SQLite</text>
 </svg>
