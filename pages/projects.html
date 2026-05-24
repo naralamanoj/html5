@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Narala Manoj - AI & Data Science Student</title>
-    <meta name="description" content="Explore Narala Manoj's portfolio of web development projects including restaurant website, library management system, and student counselling platform.">
-    <meta name="keywords" content="Narala Manoj projects, web development portfolio, restaurant website, library system, student counselling, Python projects">
+    <meta name="description"
+        content="Explore Narala Manoj's portfolio of web development projects including restaurant website, library management system, and student counselling platform.">
+    <meta name="keywords"
+        content="Narala Manoj projects, web development portfolio, restaurant website, library system, student counselling, Python projects">
     <link rel="canonical" href="https://manojnarala.dev/pages/projects.html">
-    
+
     <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/layout.css">
-    
+
     <!-- JSON-LD CreativeWork Schema -->
     <script type="application/ld+json">
     {
@@ -58,10 +66,11 @@
     }
     </script>
 </head>
+
 <body>
     <!-- Skip Link -->
     <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
-    
+
     <!-- Header -->
     <header class="site-header">
         <nav class="primary-nav" aria-label="Primary navigation">
@@ -69,13 +78,14 @@
                 <a href="../" class="logo" aria-label="Narala Manoj - Home">
                     <span>NM</span>
                 </a>
-                
-                <button class="hamburger-menu" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+
+                <button class="hamburger-menu" aria-expanded="false" aria-controls="nav-menu"
+                    aria-label="Toggle navigation menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
-                
+
                 <ul class="nav-menu" id="nav-menu">
                     <li><a href="../">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -84,7 +94,7 @@
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                
+
                 <div class="theme-controls">
                     <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
                     <button class="font-size-toggle" aria-label="Increase font size">A+</button>
@@ -93,7 +103,7 @@
             </div>
         </nav>
     </header>
-    
+
     <!-- Main Content -->
     <main id="main-content">
         <!-- Projects Hero -->
@@ -103,132 +113,420 @@
                     <h1 id="projects-heading">My Projects</h1>
                     <p class="hero-subtitle">Web Development Portfolio</p>
                     <p class="hero-description">
-                        Explore my collection of web development projects showcasing frontend development, 
+                        Explore my collection of web development projects showcasing frontend development,
                         full-stack applications, and user-friendly solutions for real-world problems.
                     </p>
                 </div>
             </div>
         </section>
-        
+
         <!-- Project Filters -->
         <section class="projects-filters" aria-labelledby="filter-heading">
             <div class="container">
                 <h2 id="filter-heading" class="sr-only">Filter Projects</h2>
                 <div class="filter-controls">
                     <button class="filter-btn active" data-filter="all" aria-pressed="true">
-                        All Projects <span class="count">(3)</span>
+                        All Projects <span class="count">(12)</span>
                     </button>
-                    <button class="filter-btn" data-filter="frontend" aria-pressed="false">
-                        Frontend <span class="count">(1)</span>
+                    <button class="filter-btn" data-filter="ai" aria-pressed="false">
+                        AI / ML <span class="count">(6)</span>
                     </button>
                     <button class="filter-btn" data-filter="fullstack" aria-pressed="false">
-                        Full-Stack <span class="count">(2)</span>
+                        Full-Stack <span class="count">(4)</span>
                     </button>
-                    <button class="filter-btn" data-filter="python" aria-pressed="false">
-                        Python <span class="count">(2)</span>
+                    <button class="filter-btn" data-filter="frontend" aria-pressed="false">
+                        Frontend <span class="count">(2)</span>
                     </button>
                 </div>
-                
+
                 <div class="search-container">
                     <label for="project-search" class="sr-only">Search Projects</label>
-                    <input 
-                        type="search" 
-                        id="project-search" 
-                        placeholder="Search projects..." 
-                        aria-describedby="search-results"
-                    >
+                    <input type="search" id="project-search" placeholder="Search projects..."
+                        aria-describedby="search-results">
                     <div id="search-results" class="search-results" aria-live="polite"></div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Projects Grid -->
         <section class="projects-section" aria-labelledby="projects-list-heading">
             <div class="container">
                 <h2 id="projects-list-heading" class="sr-only">Projects List</h2>
                 <div class="projects-grid" id="projects-grid">
-                    
-                    <!-- Restaurant Website Project -->
-                    <article class="project-card" data-category="frontend" data-tags="html css javascript restaurant frontend">
+
+                    <!-- AI Project: Face Mask & Plant Disease -->
+                    <article class="project-card project-card--featured" data-category="ai"
+                        data-tags="python cnn deeplearning facemask plants">
+                        <div class="project-card-accent" style="background: linear-gradient(135deg, #10b981, #3b82f6)">
+                        </div>
                         <figure class="project-image">
-                            <img src="../assets/project-restaurant.jpg" alt="Advanced restaurant website showing modern UI with menu management and ordering system" width="300" height="200" loading="lazy">
-                            <figcaption class="sr-only">Restaurant Website Screenshot</figcaption>
+                            <img src="../assets/project-facemask.png" alt="Face Mask and Plant Disease Detection"
+                                width="300" height="200" loading="lazy" onerror="this.src='../assets/placeholder.svg'">
+                            <div class="project-overlay">
+                                <a href="https://github.com/NARALAMANOJYADAV/face-mask-and-plant-disease-detection"
+                                    target="_blank" rel="noopener noreferrer" class="overlay-btn">View on GitHub →</a>
+                            </div>
                         </figure>
                         <div class="project-content">
-                            <h3>Advanced Restaurant Website</h3>
-                            <p>Modern restaurant website featuring advanced frontend development with responsive design, interactive menu system, and user-friendly interface. Built with pure HTML5, CSS3, and JavaScript.</p>
+                            <div class="project-meta">
+                                <span class="project-category">📊 AI / Computer Vision</span>
+                                <span class="project-source">@NARALAMANOJYADAV</span>
+                            </div>
+                            <h3>Face Mask & Plant Disease Detection</h3>
+                            <p>A sophisticated AI solution using Convolutional Neural Networks to detect mask compliance
+                                and identify diseases in various plant species.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">OpenCV</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/NARALAMANOJYADAV/face-mask-and-plant-disease-detection"
+                                    target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AI Project: YOLOv8 Uniform Detection -->
+                    <article class="project-card project-card--featured" data-category="ai"
+                        data-tags="yolov8 pytorch opencv detection uniform">
+                        <div class="project-card-accent" style="background: linear-gradient(135deg, #f59e0b, #ef4444)">
+                        </div>
+                        <figure class="project-image">
+                            <img src="../assets/project-uniform-1.jpg" alt="Uniform Detection YOLOv8" width="300"
+                                height="200" loading="lazy" onerror="this.src='../assets/placeholder.svg'">
+                            <div class="project-overlay">
+                                <a href="https://github.com/NARALAMANOJYADAV/complete-uniform-detection-YOLOv8"
+                                    target="_blank" rel="noopener noreferrer" class="overlay-btn">View on GitHub →</a>
+                            </div>
+                        </figure>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">🎯 Object Detection</span>
+                                <span class="project-source">@NARALAMANOJYADAV</span>
+                            </div>
+                            <h3>Complete Uniform Detection YOLOv8</h3>
+                            <p>Real-time object detection system for institutional uniform compliance using the
+                                state-of-the-art YOLOv8 architecture.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">YOLOv8</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/NARALAMANOJYADAV/complete-uniform-detection-YOLOv8"
+                                    target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AI Project: Chatbot -->
+                    <article class="project-card" data-category="ai" data-tags="typescript nlp chatbot nodejs">
+                        <div class="project-card-accent" style="background: var(--gradient-primary)"></div>
+                        <figure class="project-image">
+                            <img src="../assets/project-chatbot.png" alt="AI Chatbot" width="300" height="200"
+                                loading="lazy" onerror="this.src='../assets/placeholder.svg'">
+                            <div class="project-overlay">
+                                <a href="https://github.com/naralamanoj/chatbot" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-btn">View on GitHub →</a>
+                            </div>
+                        </figure>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">🤖 NLP / AI</span>
+                                <span class="project-source">@naralamanoj</span>
+                            </div>
+                            <h3>Intelligent Chatbot</h3>
+                            <p>Context-aware conversational agent built with TypeScript, focusing on natural language
+                                understanding and fluid user experience.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">NLP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/naralamanoj/chatbot" target="_blank"
+                                    rel="noopener noreferrer">🔗 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AI Project: Traveller -->
+                    <article class="project-card" data-category="ai" data-tags="python langchain ai travel planner">
+                        <div class="project-card-accent" style="background: linear-gradient(135deg, #06b6d4, #8b5cf6)">
+                        </div>
+                        <figure class="project-image">
+                            <img src="../assets/project-travel.png" alt="AI Traveller" width="300" height="200"
+                                loading="lazy" onerror="this.src='../assets/placeholder.svg'">
+                            <div class="project-overlay">
+                                <a href="https://github.com/NARALAMANOJYADAV/ai-traveller" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-btn">View on GitHub →</a>
+                            </div>
+                        </figure>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">🌍 AI Travel Agent</span>
+                                <span class="project-source">@NARALAMANOJYADAV</span>
+                            </div>
+                            <h3>AI Travel Planner</h3>
+                            <p>Intelligent travel assistant that uses multi-agent AI to craft personalized itineraries
+                                and travel recommendations.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">OpenAI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/NARALAMANOJYADAV/ai-traveller" target="_blank"
+                                    rel="noopener noreferrer">🔗 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Full-Stack: Hospital -->
+                    <article class="project-card" data-category="fullstack"
+                        data-tags="typescript nextjs prisma hospital">
+                        <div class="project-card-accent" style="background: linear-gradient(135deg, #2563eb, #7c3aed)">
+                        </div>
+                        <figure class="project-image">
+                            <img src="../assets/project-counselling.jpg" alt="Hospital Management" width="300"
+                                height="200" loading="lazy" onerror="this.src='../assets/placeholder.svg'">
+                            <div class="project-overlay">
+                                <a href="https://github.com/naralamanoj/hospital" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-btn">View on GitHub →</a>
+                            </div>
+                        </figure>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">🏥 Full Stack / Healthcare</span>
+                                <span class="project-source">@naralamanoj</span>
+                            </div>
+                            <h3>Hospital Management System</h3>
+                            <p>Enterprise-grade healthcare application for managing patient data, staffing, and clinical
+                                appointments.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Prisma</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/naralamanoj/hospital" target="_blank"
+                                    rel="noopener noreferrer">🔗 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Full-Stack: Counselling -->
+                    <article class="project-card" data-category="fullstack"
+                        data-tags="python flask counselling postgress">
+                        <div class="project-card-accent" style="background: var(--gradient-accent)"></div>
+                        <figure class="project-image">
+                            <img src="../assets/project-counselling.jpg" alt="Student Counselling" width="300"
+                                height="200" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/naralamanoj/counsiling" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-btn">View on GitHub →</a>
+                            </div>
+                        </figure>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">🎓 Full Stack / EdTech</span>
+                                <span class="project-source">@naralamanoj</span>
+                            </div>
+                            <h3>Student Counselling Platform</h3>
+                            <p>A comprehensive platform for students to book counseling sessions and access educational
+                                resources.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">SQLAlchemy</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/naralamanoj/counsiling" target="_blank"
+                                    rel="noopener noreferrer">🔗 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AI Project: Gravience -->
+                    <article class="project-card" data-category="ai" data-tags="python ai gravience data">
+                        <div class="project-card-accent" style="background: linear-gradient(135deg, #4f46e5, #0ea5e9)">
+                        </div>
+                        <figure class="project-image">
+                            <img src="../assets/project-library.jpg" alt="Gravience Project" width="300" height="200"
+                                loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/NARALAMANOJYADAV/gravience" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-btn">View on GitHub →</a>
+                            </div>
+                        </figure>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">🪐 AI / Gravience</span>
+                                <span class="project-source">@NARALAMANOJYADAV</span>
+                            </div>
+                            <h3>Gravience AI</h3>
+                            <p>Advanced data exploration and AI research project focusing on gravitational data and
+                                intelligent forecasting.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scikit-Learn</span>
+                                <span class="tech-tag">Data Science</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/NARALAMANOJYADAV/gravience" target="_blank"
+                                    rel="noopener noreferrer">🔗 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Full-Stack: Smart Attendance -->
+                    <article class="project-card" data-category="fullstack"
+                        data-tags="python attendance face recognition">
+                        <div class="project-card-accent" style="background: linear-gradient(135deg, #10b981, #059669)">
+                        </div>
+                        <figure class="project-image">
+                            <img src="../assets/project-uniform-2.jpg" alt="Smart Attendance" width="300" height="200"
+                                loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/NARALAMANOJYADAV/smartatt" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-btn">View on GitHub →</a>
+                            </div>
+                        </figure>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">⏰ Smart Systems</span>
+                                <span class="project-source">@NARALAMANOJYADAV</span>
+                            </div>
+                            <h3>Smart Attendance System</h3>
+                            <p>Automated attendance tracking system leveraging face recognition technology for seamless
+                                classroom check-ins.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/NARALAMANOJYADAV/smartatt" target="_blank"
+                                    rel="noopener noreferrer">🔗 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project: Heart Failure Prediction -->
+                    <article class="project-card" data-category="ai" data-tags="python machinelearning health data">
+                        <div class="project-card-accent" style="background: linear-gradient(135deg, #ef4444, #f43f5e)">
+                        </div>
+                        <figure class="project-image">
+                            <img src="../assets/project-counselling.jpg" alt="Heart Failure Prediction" width="300"
+                                height="200" loading="lazy" style="filter: hue-rotate(150deg);">
+                            <div class="project-overlay">
+                                <a href="https://github.com/NARALAMANOJYADAV/heart-failure-prediction" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-btn">Check Model →</a>
+                            </div>
+                        </figure>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">🔬 Machine Learning</span>
+                                <span class="project-source">@NARALAMANOJYADAV</span>
+                            </div>
+                            <h3>Heart Failure Prediction</h3>
+                            <p>Predictive analytics model using clinical data to identify risks of heart failure with
+                                high
+                                precision and recall.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">ML</span>
+                                <span class="tech-tag">Data Science</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Frontend: Advanced Restaurant -->
+                    <article class="project-card" data-category="frontend" data-tags="html css js restaurant">
+                        <div class="project-card-accent" style="background: linear-gradient(135deg, #f59e0b, #d97706)">
+                        </div>
+                        <figure class="project-image">
+                            <img src="../assets/project-restaurant.jpg" alt="Advanced Restaurant Website" width="300"
+                                height="200" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/naralamanoj/restaurants" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-btn">Taste UI →</a>
+                            </div>
+                        </figure>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">🍔 Frontend</span>
+                                <span class="project-source">@naralamanoj</span>
+                            </div>
+                            <h3>Premium Restaurant Site</h3>
+                            <p>Modern, responsive restaurant landing page with interactive menus, reservation forms, and
+                                elegant scroll animations.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Full-Stack: Library Management -->
+                    <article class="project-card" data-category="fullstack" data-tags="python flask library sql">
+                        <div class="project-card-accent" style="background: linear-gradient(135deg, #6366f1, #4f46e5)">
+                        </div>
+                        <figure class="project-image">
+                            <img src="../assets/project-library.jpg" alt="Library Management System" width="300"
+                                height="200" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/naralamanoj/libarary" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-btn">Browse Books →</a>
+                            </div>
+                        </figure>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">📚 Full Stack</span>
+                                <span class="project-source">@naralamanoj</span>
+                            </div>
+                            <h3>Academic Library System</h3>
+                            <p>Complete management solution for academic libraries with book tracking, student accounts,
+                                and automated borrow/return flows.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">SQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Frontend: College Website -->
+                    <article class="project-card" data-category="frontend" data-tags="html css js college">
+                        <div class="project-card-accent" style="background: linear-gradient(135deg, #06b6d4, #10b981)">
+                        </div>
+                        <figure class="project-image">
+                            <img src="../assets/project-library.jpg" alt="College Website" width="300" height="200"
+                                loading="lazy" onerror="this.src='../assets/placeholder.svg'">
+                            <div class="project-overlay">
+                                <a href="https://github.com/naralamanoj/college" target="_blank"
+                                    rel="noopener noreferrer" class="overlay-btn">View Campus →</a>
+                            </div>
+                        </figure>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">🌐 Frontend</span>
+                                <span class="project-source">@naralamanoj</span>
+                            </div>
+                            <h3>Modern College Website</h3>
+                            <p>Responsive educational portal with clean typography, dynamic galleries, and optimized
+                                performance for student access.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">HTML5</span>
                                 <span class="tech-tag">CSS3</span>
                                 <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Responsive Design</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/manojnarala/restaurant-website" target="_blank" rel="noopener noreferrer" aria-label="View Restaurant Website source code on GitHub">
-                                    <span class="link-icon">🔗</span> GitHub
-                                </a>
-                                <button class="view-details-btn" aria-label="View Restaurant Website details">
-                                    <span class="link-icon">👁️</span> View Details
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- Library Management System -->
-                    <article class="project-card" data-category="fullstack python" data-tags="python flask library management academic fullstack">
-                        <figure class="project-image">
-                            <img src="../assets/project-library.jpg" alt="Academic library management system showing student-friendly interface with book search and management features" width="300" height="200" loading="lazy">
-                            <figcaption class="sr-only">Library Management System Screenshot</figcaption>
-                        </figure>
-                        <div class="project-content">
-                            <h3>Academic Library Management System</h3>
-                            <p>User-friendly library system designed specifically for academic year requirements. Features intuitive navigation, book search functionality, and student-centric design for easy access to library resources.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Flask</span>
-                                <span class="tech-tag">HTML/CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">SQLite</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/manojnarala/library-management" target="_blank" rel="noopener noreferrer" aria-label="View Library Management System source code on GitHub">
-                                    <span class="link-icon">🔗</span> GitHub
-                                </a>
-                                <button class="view-details-btn" aria-label="View Library Management System details">
-                                    <span class="link-icon">👁️</span> View Details
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- Student Counselling Platform -->
-                    <article class="project-card" data-category="fullstack python" data-tags="python django counselling student fullstack postgresql">
-                        <figure class="project-image">
-                            <img src="../assets/project-counselling.jpg" alt="Student counselling platform showing appointment booking and resource management interface" width="300" height="200" loading="lazy">
-                            <figcaption class="sr-only">Student Counselling Platform Screenshot</figcaption>
-                        </figure>
-                        <div class="project-content">
-                            <h3>Student Counselling Platform</h3>
-                            <p>Full-stack web application designed to save students time by providing easy access to counselling services. Features both frontend and backend development with appointment booking and resource management.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Bootstrap</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/manojnarala/student-counselling" target="_blank" rel="noopener noreferrer" aria-label="View Student Counselling Platform source code on GitHub">
-                                    <span class="link-icon">🔗</span> GitHub
-                                </a>
-                                <button class="view-details-btn" aria-label="View Student Counselling Platform details">
-                                    <span class="link-icon">👁️</span> View Details
-                                </button>
                             </div>
                         </div>
                     </article>
                 </div>
-                
+
                 <!-- No Results Message -->
                 <div id="no-results" class="no-results" style="display: none;" aria-live="polite">
                     <h3>No projects found</h3>
@@ -236,32 +534,32 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Project Statistics -->
         <section class="project-stats" aria-labelledby="stats-heading">
             <div class="container">
                 <h2 id="stats-heading">Project Statistics</h2>
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <div class="stat-number counter" data-target="3" data-duration="1500">0</div>
+                        <div class="stat-number counter" data-target="8" data-duration="1500">0</div>
                         <div class="stat-label">Projects Completed</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number counter" data-target="6" data-duration="2000">0</div>
+                        <div class="stat-number counter" data-target="15" data-duration="2000">0</div>
                         <div class="stat-label">Technologies Used</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number counter" data-target="2" data-duration="1000">0</div>
-                        <div class="stat-label">Full-Stack Applications</div>
+                        <div class="stat-label">GitHub Profiles</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number counter" data-target="100" data-duration="2500">0</div>
+                        <div class="stat-number counter" data-target="300" data-duration="2500">0</div>
                         <div class="stat-label">Hours of Development</div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Technologies Used -->
         <section class="technologies-section" aria-labelledby="tech-heading">
             <div class="container">
@@ -269,20 +567,25 @@
                 <p>Technologies I've used across my projects:</p>
                 <div class="tech-cloud">
                     <span class="tech-item" data-weight="3">Python</span>
+                    <span class="tech-item" data-weight="3">TypeScript</span>
+                    <span class="tech-item" data-weight="3">React</span>
+                    <span class="tech-item" data-weight="2">Next.js</span>
+                    <span class="tech-item" data-weight="2">Node.js</span>
                     <span class="tech-item" data-weight="2">Flask</span>
-                    <span class="tech-item" data-weight="2">Django</span>
                     <span class="tech-item" data-weight="3">HTML5</span>
                     <span class="tech-item" data-weight="3">CSS3</span>
                     <span class="tech-item" data-weight="3">JavaScript</span>
-                    <span class="tech-item" data-weight="1">PostgreSQL</span>
-                    <span class="tech-item" data-weight="1">SQLite</span>
-                    <span class="tech-item" data-weight="1">Bootstrap</span>
-                    <span class="tech-item" data-weight="2">Responsive Design</span>
+                    <span class="tech-item" data-weight="3">LangChain</span>
+                    <span class="tech-item" data-weight="2">LLMs</span>
+                    <span class="tech-item" data-weight="2">RAG</span>
+                    <span class="tech-item" data-weight="2">NLP</span>
+                    <span class="tech-item" data-weight="2">Computer Vision</span>
+                    <span class="tech-item" data-weight="1">OpenCV</span>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-container">
@@ -300,7 +603,7 @@
                         </ul>
                     </nav>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <address>
@@ -309,16 +612,18 @@
                         <p>Location: Vidyanagar, Nellore, Andhra Pradesh, India</p>
                     </address>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3>Follow Me</h3>
                     <div class="footer-social">
-                        <a href="https://github.com/manojnarala" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-                        <a href="https://linkedin.com/in/narala-manoj-215849302" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="https://github.com/naralamanoj" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">GitHub</a>
+                        <a href="https://linkedin.com/in/narala-manoj-215849302" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; <span id="current-year">2024</span> Narala Manoj. All rights reserved.</p>
                 <div class="footer-links">
@@ -328,16 +633,16 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Toast Container -->
     <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
-    
+
     <!-- Scripts -->
     <script src="../js/theme.js" defer></script>
     <script src="../js/navigation.js" defer></script>
     <script src="../js/toast.js" defer></script>
-    <script src="../js/modal.js" defer></script>
     <script src="../js/animations.js" defer></script>
     <script src="../js/projects.js" defer></script>
 </body>
+
 </html>
